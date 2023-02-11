@@ -1,0 +1,13 @@
+button {
+    border: 0;
+    width: 453px;
+    height: 75px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color:#CE0033;
+    border-radius: 60px;
+    /* à effacer une fois le flex mis en place */
+    margin-top: 200px;
+}
