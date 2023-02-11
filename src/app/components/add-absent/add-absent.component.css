@@ -1,0 +1,36 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label{
+    margin: 17px 0; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+select {
+    width: 513px;
+    height: 73px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 25px 31px;
+    border: none;
+    border-radius: 10px;
+    margin: 17px 0;    
+}
+button {
+    border: 0;
+    width: 143px;
+    height: 57px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color:#CE0033;
+    border-radius: 50px;
+    margin: 17px 0; 
+}
