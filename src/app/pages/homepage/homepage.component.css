@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    margin-bottom: 85px;
+}
+/* ??? */
+.rectangle{
+    margin-bottom: 234px;
+}
