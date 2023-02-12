@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SelectionButtonComponent } from './components/selection-button/selection-button.component';
 import { AddAbsentComponent } from './components/add-absent/add-absent.component';
 import { MessageRectangleComponent } from './components/message-rectangle/message-rectangle.component';
+import { AbsentListByGenderComponent } from './components/absent-list-by-gender/absent-list-by-gender.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MessageRectangleComponent } from './components/message-rectangle/messag
     FooterComponent,
     SelectionButtonComponent,
     AddAbsentComponent,
-    MessageRectangleComponent
+    MessageRectangleComponent,
+    AbsentListByGenderComponent
   ],
   imports: [
     BrowserModule
