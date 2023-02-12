@@ -2,7 +2,7 @@ button {
     border: 0;
     width: 453px;
     height: 75px;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 20px;
     text-align: center;
     color: white;
@@ -10,4 +10,6 @@ button {
     border-radius: 60px;
     /* à effacer une fois le flex mis en place */
     margin-top: 200px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
