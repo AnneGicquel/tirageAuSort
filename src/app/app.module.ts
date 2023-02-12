@@ -8,6 +8,10 @@ import { SelectionButtonComponent } from './components/selection-button/selectio
 import { AddAbsentComponent } from './components/add-absent/add-absent.component';
 import { MessageRectangleComponent } from './components/message-rectangle/message-rectangle.component';
 import { AbsentListByGenderComponent } from './components/absent-list-by-gender/absent-list-by-gender.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { AbsentPageComponent } from './pages/absent-page/absent-page.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -17,10 +21,13 @@ import { AbsentListByGenderComponent } from './components/absent-list-by-gender/
     SelectionButtonComponent,
     AddAbsentComponent,
     MessageRectangleComponent,
-    AbsentListByGenderComponent
+    AbsentListByGenderComponent,
+    HomepageComponent,
+    AbsentPageComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

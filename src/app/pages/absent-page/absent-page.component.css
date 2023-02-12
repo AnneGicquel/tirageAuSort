@@ -1,0 +1,14 @@
+.vr{
+    border-left: 2px solid #000;
+    height:619px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.add-absent{
+    display: flex;
+    align-items: center;
+}
