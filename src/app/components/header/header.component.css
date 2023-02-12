@@ -19,8 +19,11 @@ header li {
 
 header li a {  
     color: white;  
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 200;
-    text-decoration: none;  
+    text-decoration: none; 
 }  
+header li a:hover {
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000,-2px 4px 3px rgba(0,0,0,0.31);
+  }
