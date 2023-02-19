@@ -1,9 +1,13 @@
 <div class="male">
     <label for="app-absent-list-by-gender">Liste des absents</label>
-    <!-- à retirer une fois la boucle ng for faite -->
 <ul>
-    <li>
-
+    <!-- <div [ngClass]="{ 'class-name': condition }"></div> -->
+    <!-- [ngClass]  pour ajouter et retirer des classes CSS selon une condition donnée -->
+    <li *ngFor="let absent of data.absents; let indexAbsent = index" 
+    [ngClass]="{'class-name': absent !== 'Erdal' && absent !== 'Jérôme' && absent !== 'Fahed' && absent !== 'Thomas'}">
+        <!-- &emsp; (« em space ») créer une espace quadruple -->
+        {{absent}}&emsp;
+        <button class="button-X">X</button>
     </li>
 </ul>
 </div>
@@ -12,8 +16,13 @@
     <label for="app-absent-list-by-gender">Liste des absentes</label>
      <!-- à retirer une fois la boucle ng for faite -->
 <ul>
-    <li>
-
+    <li *ngFor="let absent of data.absents; let indexAbsent = index"
+        [ngClass]="{'class-name': absent === 'Erdal' || absent === 'Jérôme' || absent === 'Fahed' || absent === 'Thomas'}">
+        {{absent}}&emsp;
+        <button class="button-X">X</button>
     </li>
 </ul>
 </div>
+
+
+<!-- (click)="removeAbsent()"-->

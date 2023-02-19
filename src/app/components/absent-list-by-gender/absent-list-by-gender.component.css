@@ -9,5 +9,14 @@ label{
 
 div{
     margin-left: 107px;
-    margin-top: 47px;
+    margin-top: 107px;
+}
+
+.button-X {
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+.class-name{
+    display: none;
 }

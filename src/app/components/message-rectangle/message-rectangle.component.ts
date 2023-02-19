@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { STUDENTS, Students } from 'src/app/mocks/absents.mock';
 
 @Component({
   selector: 'app-message-rectangle',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./message-rectangle.component.css']
 })
 export class MessageRectangleComponent {
+
+// liste des students
+studentsList: Students[] = STUDENTS;
+
 
 }

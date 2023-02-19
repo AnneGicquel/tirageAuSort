@@ -1,9 +1,31 @@
 <div>
+    <!-- drop-down menu crée avec la boucle *ngFor -->
+
     <label for="absent-select">Ajouter un.e absent.e</label>
-    <select name="student" id="student-select">
+    <!-- (change) function parameter contains classic event properties.
+To get the value of changed value we need to use e.target.value property. -->
+    <select name="student" id="student" (change)="onSelected($event)">
         <option value="">Sélectionner une personne</option>
-        <option value="man">Fahd</option>
-        <option value="man">Erdal</option>
+        <option *ngFor="let student of studentsList" value ={{student.name}} >
+            {{student.name}}                       
+        </option>                    
+    </select>
+    <button type='submit'(click)="addAbsent()">Ajouter</button>  
+</div>   
+
+
+
+   
+
+    
+    
+<!-- <div> 
+    <p>{{selectedAbsents}}</p>
+    <label for="absent-select">Ajouter un.e absent.e</label> 
+    <select name="student" id="student-select" #absents (change)="onSelected($event)">
+        <option value="">Sélectionner une personne</option>
+        <option value="male">Fahd</option>
+        <option value="male">Erdal</option>
         <option value="female">Clara</option>
         <option value="female">Diambéré</option>
         <option value="female">Morgane</option>
@@ -12,20 +34,20 @@
         <option value="female">Jiyun</option>
         <option value="female">Lilianna</option>
         <option value="female">Kanzia</option>
-        <option value="man">Thomas</option>
+        <option value="male">Thomas</option>
         <option value="female">Christelle</option>
         <option value="female">Assa</option>
         <option value="female">Fama</option>
         <option value="female">Julie</option>
         <option value="female">Cynthia</option>
-        <option value="man">Jérôme</option>
+        <option value="male">Jérôme</option>
         <option value="female">Katia</option>
     </select>
-    <button type="button">Ajouter</button>
-</div>
+    <button>Ajouter</button>
+</div>   -->
 
 
-
+<!-- (click)="addAbsent()" -->
 
 
 

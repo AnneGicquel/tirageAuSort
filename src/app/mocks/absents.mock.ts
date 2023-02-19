@@ -1,17 +1,19 @@
-type Gender = 'male'|'female'
+export type StudentGender = 'male'|'female'
 
-interface Students {
+export interface Students {
     id:number;
     name: string;
-    gender: Gender;
+    gender: StudentGender;
+    
 }
 
-export const STUDENTS: Students []=[
+export const STUDENTS:Students[]=[
 
     {
     id:1,
-    name: 'Fahd',
+    name: 'Fahed',
     gender: "male",
+    
     },
 
     {
@@ -64,24 +66,18 @@ export const STUDENTS: Students []=[
 
     {
     id:10,
-    name: 'Lilianna',
-    gender: "female",
-    },
-
-    {
-    id:11,
     name: 'Kanzia',
     gender: "female",
     },
 
     {
-    id:12,
+    id:11,
     name: 'Thomas',
     gender: "male",
     },
 
     {
-    id:13,
+    id:12,
     name: 'Christelle',
     gender: "female",
     },
