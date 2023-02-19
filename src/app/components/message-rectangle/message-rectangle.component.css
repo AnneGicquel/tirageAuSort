@@ -1,4 +1,4 @@
-div{
+/* div{
     width: 896px;
     height: 354px;
     background-color: white;
@@ -6,4 +6,7 @@ div{
     justify-content: center;
     align-items: center;
 }
+.winnerMessage{
+    text-align: center;
+} */
 
